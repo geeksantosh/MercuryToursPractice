@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Bankingapp Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.mercurytours.tests.TC_Reservation_0002">
+        <methods>
+          <include name="tearDown"/>
+          <include name="flightReservation"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mercurytours.tests.TC_Reservation_0002 -->
+      <class name="com.mercurytours.tests.TC_Login_0001">
+        <methods>
+          <include name="tearDown"/>
+          <include name="userLoginTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mercurytours.tests.TC_Login_0001 -->
+    </classes>
+  </test> <!-- Bankingapp Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="157868" started-at="2020-05-06T19:37:08 NPT" finished-at="2020-05-06T19:39:46 NPT">
+    <groups>
+    </groups>
+    <test name="Bankingapp Test" duration-ms="157868" started-at="2020-05-06T19:37:08 NPT" finished-at="2020-05-06T19:39:46 NPT">
+      <class name="com.mercurytours.tests.TC_Reservation_0002">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.mercurytours.tests.TC_Reservation_0002@72b6cbcc]" name="setUp" is-config="true" duration-ms="10767" started-at="2020-05-06T19:39:28 NPT" finished-at="2020-05-06T19:39:39 NPT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="flightReservation()[pri:0, instance:com.mercurytours.tests.TC_Reservation_0002@72b6cbcc]" name="flightReservation" duration-ms="7224" started-at="2020-05-06T19:39:39 NPT" finished-at="2020-05-06T19:39:46 NPT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightReservation -->
+      </class> <!-- com.mercurytours.tests.TC_Reservation_0002 -->
+      <class name="com.mercurytours.tests.TC_Login_0001">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.mercurytours.tests.TC_Login_0001@6737fd8f]" name="setUp" is-config="true" duration-ms="35190" started-at="2020-05-06T19:37:08 NPT" finished-at="2020-05-06T19:37:43 NPT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="userLoginTest()[pri:0, instance:com.mercurytours.tests.TC_Login_0001@6737fd8f]" name="userLoginTest" duration-ms="104624" started-at="2020-05-06T19:37:43 NPT" finished-at="2020-05-06T19:39:28 NPT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLoginTest -->
+      </class> <!-- com.mercurytours.tests.TC_Login_0001 -->
+    </test> <!-- Bankingapp Test -->
+  </suite> <!-- Suite -->
+</testng-results>
