@@ -2,7 +2,8 @@ package com.mercurytours.tests;
 
 import java.util.concurrent.TimeUnit;
 
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -21,6 +22,9 @@ public class BaseClass {
 	public String baseURL = readconfig.getApplicationURL();
 	public String username = readconfig.getUsername();
 	public String password = readconfig.getPassword();
+	
+	Logger logger = LogManager.getRootLogger();
+
 
 
 	@Parameters("browser")
@@ -45,6 +49,7 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(baseURL);
+		logger.info("URL is opened");
 	}
 	
 	

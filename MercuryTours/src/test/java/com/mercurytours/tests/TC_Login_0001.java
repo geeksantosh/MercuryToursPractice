@@ -19,10 +19,10 @@ public class TC_Login_0001 extends BaseClass{
 
 		if(driver.getTitle().equals("Find a Flight: Mercury Tours:")) {
 			Assert.assertTrue(true);
-			System.out.println("login test is passed");
+			logger.info("Login Test is passed");
 		}else {
 			Assert.assertFalse(false);
-			System.out.println("Login test is failed");
+			logger.info("Login test is failed");
 
 		}
 	}

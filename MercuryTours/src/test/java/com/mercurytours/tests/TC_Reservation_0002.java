@@ -19,7 +19,9 @@ public class TC_Reservation_0002 extends BaseClass {
 		
 		ReservationPage reservation = new ReservationPage(driver);
 		reservation.getRadioButtonReservation();
+		logger.info(" Flight Details Radio Button data is selected");
 		reservation.dropDownFlightDetails();
+		logger.info("Flight Details Drop-down selection");
 
 		
 		

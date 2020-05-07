@@ -42,27 +42,49 @@ public class ReservationPage {
 		WebElement returningMonth = driver.findElement(By.xpath("//select[@name = 'toMonth']"));
 		WebElement returningDay = driver.findElement(By.xpath("//select[@name = 'toDay']"));
 
-		Select selectPassanger = new Select(passengers);
-		selectPassanger.selectByVisibleText("2");
+		/*
+		 * Select selectPassanger = new Select(passengers);
+		 * selectPassanger.selectByVisibleText("2");
+		 * 
+		 * Select selectDepartingFrom = new Select(departingFrom);
+		 * selectDepartingFrom.selectByVisibleText("Paris");
+		 * 
+		 * Select selectDepartingOnMonth = new Select(departingOnMonth);
+		 * selectDepartingOnMonth.selectByVisibleText("June");
+		 * 
+		 * Select selectDepartingOnDay = new Select(departingOnDay);
+		 * selectDepartingOnDay.selectByVisibleText("20");
+		 * 
+		 * Select selectArrivingIn = new Select(arrivingIn);
+		 * selectArrivingIn.selectByVisibleText("London");
+		 * 
+		 * 
+		 * Select selectReturningMonth = new Select(returningMonth);
+		 * selectReturningMonth.selectByVisibleText("June");
+		 * 
+		 * Select selectReturningDay = new Select(returningDay);
+		 * selectReturningDay.selectByVisibleText("22");
+		 */
+		
+		String departingOn = "June-20";
+		String departingOnArr[] = departingOn.split("-");
+		
+		String returning = "June-22";
+		String returningArr[] = returning.split("-");
+		
+		selectValueFromDropDown(passengers, "2");
+		selectValueFromDropDown(departingFrom, "Paris");
+		selectValueFromDropDown(departingOnMonth,departingOnArr[0]);
+		selectValueFromDropDown(departingOnDay, departingOnArr[1]);
+		selectValueFromDropDown(arrivingIn, "London");
+		selectValueFromDropDown(returningMonth, returningArr[0]);
+		selectValueFromDropDown(returningDay, returningArr[1]);
+	
 
-		Select selectDepartingFrom = new Select(departingFrom);
-		selectDepartingFrom.selectByVisibleText("Paris");
-
-		Select selectDepartingOnMonth = new Select(departingOnMonth);
-		selectDepartingOnMonth.selectByVisibleText("June");
-
-		Select selectDepartingOnDay = new Select(departingOnDay);
-		selectDepartingOnDay.selectByVisibleText("20");
-
-		Select selectArrivingIn = new Select(arrivingIn);
-		selectArrivingIn.selectByVisibleText("London");
-
-
-		Select selectReturningMonth = new Select(returningMonth);
-		selectReturningMonth.selectByVisibleText("June");
-
-		Select selectReturningDay = new Select(returningDay);
-		selectReturningDay.selectByVisibleText("22");
-
+	}
+	
+	public void selectValueFromDropDown(WebElement element, String value) {
+		Select select = new Select(element);
+		select.selectByVisibleText(value);
 	}
 }
