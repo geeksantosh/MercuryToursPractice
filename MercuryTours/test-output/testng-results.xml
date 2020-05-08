@@ -2,29 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="366349" started-at="2020-05-07T15:42:20 NPT" finished-at="2020-05-07T15:48:26 NPT">
+  <suite name="Suite" duration-ms="287674" started-at="2020-05-07T20:45:50 NPT" finished-at="2020-05-07T20:50:38 NPT">
     <groups>
     </groups>
-    <test name="Bankingapp Test" duration-ms="366349" started-at="2020-05-07T15:42:20 NPT" finished-at="2020-05-07T15:48:26 NPT">
-      <class name="com.mercurytours.tests.TC_Reservation_0002">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.mercurytours.tests.TC_Reservation_0002@610f7aa]" name="setUp" is-config="true" duration-ms="61258" started-at="2020-05-07T15:45:22 NPT" finished-at="2020-05-07T15:46:24 NPT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="flightReservation()[pri:0, instance:com.mercurytours.tests.TC_Reservation_0002@610f7aa]" name="flightReservation" duration-ms="122393" started-at="2020-05-07T15:46:24 NPT" finished-at="2020-05-07T15:48:26 NPT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flightReservation -->
-      </class> <!-- com.mercurytours.tests.TC_Reservation_0002 -->
+    <test name="Bankingapp Test" duration-ms="287674" started-at="2020-05-07T20:45:50 NPT" finished-at="2020-05-07T20:50:38 NPT">
       <class name="com.mercurytours.tests.TC_Login_0001">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.mercurytours.tests.TC_Login_0001@3098cf3b]" name="setUp" is-config="true" duration-ms="39973" started-at="2020-05-07T15:42:20 NPT" finished-at="2020-05-07T15:43:00 NPT">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.mercurytours.tests.TC_Login_0001@60015ef5]" name="setUp" is-config="true" duration-ms="110420" started-at="2020-05-07T20:45:51 NPT" finished-at="2020-05-07T20:47:41 NPT">
           <params>
             <param index="0">
               <value>
@@ -35,11 +18,28 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="userLoginTest()[pri:0, instance:com.mercurytours.tests.TC_Login_0001@3098cf3b]" name="userLoginTest" duration-ms="142652" started-at="2020-05-07T15:43:00 NPT" finished-at="2020-05-07T15:45:22 NPT">
+        <test-method status="PASS" signature="userLoginTest()[pri:0, instance:com.mercurytours.tests.TC_Login_0001@60015ef5]" name="userLoginTest" duration-ms="57933" started-at="2020-05-07T20:47:41 NPT" finished-at="2020-05-07T20:48:39 NPT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLoginTest -->
       </class> <!-- com.mercurytours.tests.TC_Login_0001 -->
+      <class name="com.mercurytours.tests.TC_Reservation_0002">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.mercurytours.tests.TC_Reservation_0002@2f54a33d]" name="setUp" is-config="true" duration-ms="15255" started-at="2020-05-07T20:48:39 NPT" finished-at="2020-05-07T20:48:54 NPT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="flightReservation()[pri:0, instance:com.mercurytours.tests.TC_Reservation_0002@2f54a33d]" name="flightReservation" duration-ms="103841" started-at="2020-05-07T20:48:54 NPT" finished-at="2020-05-07T20:50:38 NPT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightReservation -->
+      </class> <!-- com.mercurytours.tests.TC_Reservation_0002 -->
     </test> <!-- Bankingapp Test -->
   </suite> <!-- Suite -->
 </testng-results>
