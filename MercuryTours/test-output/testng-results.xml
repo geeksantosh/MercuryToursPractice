@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="373262" started-at="2020-05-08T12:11:25 NPT" finished-at="2020-05-08T12:17:39 NPT">
+  <suite name="Suite" duration-ms="192687" started-at="2020-05-09T18:48:57 NPT" finished-at="2020-05-09T18:52:10 NPT">
     <groups>
     </groups>
-    <test name="Bankingapp Test" duration-ms="373262" started-at="2020-05-08T12:11:25 NPT" finished-at="2020-05-08T12:17:39 NPT">
+    <test name="Bankingapp Test" duration-ms="192687" started-at="2020-05-09T18:48:57 NPT" finished-at="2020-05-09T18:52:10 NPT">
       <class name="com.mercurytours.tests.TC_Login_0001">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.mercurytours.tests.TC_Login_0001@60015ef5]" name="setUp" is-config="true" duration-ms="230469" started-at="2020-05-08T12:11:26 NPT" finished-at="2020-05-08T12:15:16 NPT">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.mercurytours.tests.TC_Login_0001@60015ef5]" name="setUp" is-config="true" duration-ms="10428" started-at="2020-05-09T18:48:57 NPT" finished-at="2020-05-09T18:49:08 NPT">
           <params>
             <param index="0">
               <value>
@@ -18,13 +18,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="userLoginTest()[pri:0, instance:com.mercurytours.tests.TC_Login_0001@60015ef5]" name="userLoginTest" duration-ms="9601" started-at="2020-05-08T12:15:16 NPT" finished-at="2020-05-08T12:15:26 NPT">
+        <test-method status="PASS" signature="userLoginTest()[pri:0, instance:com.mercurytours.tests.TC_Login_0001@60015ef5]" name="userLoginTest" duration-ms="7028" started-at="2020-05-09T18:49:08 NPT" finished-at="2020-05-09T18:49:15 NPT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLoginTest -->
       </class> <!-- com.mercurytours.tests.TC_Login_0001 -->
       <class name="com.mercurytours.tests.TC_Reservation_0002">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.mercurytours.tests.TC_Reservation_0002@2f54a33d]" name="setUp" is-config="true" duration-ms="110787" started-at="2020-05-08T12:15:26 NPT" finished-at="2020-05-08T12:17:17 NPT">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.mercurytours.tests.TC_Reservation_0002@2f54a33d]" name="setUp" is-config="true" duration-ms="66223" started-at="2020-05-09T18:49:15 NPT" finished-at="2020-05-09T18:50:21 NPT">
           <params>
             <param index="0">
               <value>
@@ -35,7 +35,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="flightReservation()[pri:0, instance:com.mercurytours.tests.TC_Reservation_0002@2f54a33d]" name="flightReservation" duration-ms="22000" started-at="2020-05-08T12:17:17 NPT" finished-at="2020-05-08T12:17:39 NPT">
+        <test-method status="PASS" signature="flightReservation()[pri:0, instance:com.mercurytours.tests.TC_Reservation_0002@2f54a33d]" name="flightReservation" duration-ms="108803" started-at="2020-05-09T18:50:21 NPT" finished-at="2020-05-09T18:52:10 NPT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flightReservation -->
