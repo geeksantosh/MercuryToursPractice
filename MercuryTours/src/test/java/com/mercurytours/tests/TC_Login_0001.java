@@ -1,5 +1,6 @@
 package com.mercurytours.tests;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -16,14 +17,19 @@ public class TC_Login_0001 extends BaseClass{
 		loginpage.loginBtn();
 
 		Thread.sleep(3000);
-
-		if(driver.getTitle().equals("Find a Flight: Mercury Tours:")) {
+		
+		String expectedURL = driver.getCurrentUrl();
+		String actualURL = "http://newtours.demoaut.com/mercuryreservation.php?osCsid=32ec1fd7d92a0473d0dd87185743a3f6";
+		
+		if(driver.findElement(By.linkText("SIGN-OFF")).isDisplayed() == true && expectedURL.equals(actualURL)) {
 			Assert.assertTrue(true);
-			logger.info("Login Test is passed");
+			logger.info("Login successful");
+
 		}else {
 			Assert.assertFalse(false);
-			logger.info("Login test is failed");
-
+			logger.info("Login failed");
 		}
+
 	}
+
 }
