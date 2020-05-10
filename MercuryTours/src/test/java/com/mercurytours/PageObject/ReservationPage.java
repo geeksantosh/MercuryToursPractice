@@ -30,7 +30,7 @@ public class ReservationPage {
 	@FindBy(how = How.XPATH, using = "//input[@type = 'radio' and @value = 'oneway']")
 	@CacheLookup
 	WebElement onewayTrip;
-	
+
 	@FindBy(how = How.XPATH, using = "/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[14]/td/input")
 	@CacheLookup
 	WebElement btnContinue;
@@ -75,7 +75,7 @@ public class ReservationPage {
 
 	//Preference details for service class
 
-	public void preferencesDetails(){
+	public void preferencesDetails() throws Exception{
 		int serviceClassRadioButtons =  driver.findElements(By.xpath("//input[@name = 'servClass' and @type = 'radio']")).size();
 		System.out.println("The size is "+ serviceClassRadioButtons);
 
@@ -94,7 +94,7 @@ public class ReservationPage {
 		for(WebElement eleDropDownValues : airelineDropDownValues) {
 			actualDropDownValues.add(eleDropDownValues.getText());
 			//System.out.println(eleDropDownValues.getText());
-			
+			//Choosing drop-down menu
 			driver.findElement(By.xpath("//option[contains(text(), 'Unified Airlines')]")).click();
 		}
 
@@ -121,9 +121,11 @@ public class ReservationPage {
 
 			}
 		}
-		
+		Thread.sleep(10000);
+
 	}
-	
+
+
 	//for clicking on continue button
 	public void clickOnContinueButton() {
 		btnContinue.click();

@@ -14,7 +14,7 @@ public class TC_Login_0001 extends BaseClass{
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.loginUsername(username);
 		logger.info("Username is entered");
-		
+
 		loginpage.loginPassword(password);
 		logger.info("Password is entered");
 
@@ -23,10 +23,10 @@ public class TC_Login_0001 extends BaseClass{
 
 
 		Thread.sleep(3000);
-		
+
 		String actualURL  = driver.getCurrentUrl();
 		String expectedURL = "http://newtours.demoaut.com/mercuryreservation.php?osCsid=32ec1fd7d92a0473d0dd87185743a3f6";
-		
+
 		if(driver.findElement(By.linkText("SIGN-OFF")).isDisplayed() == true || expectedURL.equals(actualURL)) {
 			Assert.assertTrue(true);
 			logger.info("Login successful");

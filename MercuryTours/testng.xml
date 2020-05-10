@@ -3,14 +3,15 @@
 <suite name="Suite">
 
 	<listeners>
-		<listener class-name="com.mercurytours.utils.ExtentReportnig" />
+	<!-- 	<listener class-name="com.mercurytours.utils.ExtentReportnig" /> -->
 	</listeners>
 
 	<test thread-count="5" name="Bankingapp Test">
-		<parameter name="browser" value="chrome" />
+		<parameter name="browser" value="chrome"/>
 		<classes>
 			<class name="com.mercurytours.tests.TC_Login_0001" />
 			<class name="com.mercurytours.tests.TC_Reservation_0002" />
+			<class name="com.mercurytours.tests.TC_SelectFlight_0003" />
 		</classes>
 	</test> <!-- TestNG -->
 </suite> <!-- Suite -->

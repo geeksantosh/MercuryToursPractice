@@ -15,6 +15,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import com.mercurytours.utils.ReadConfig;
@@ -32,8 +34,8 @@ public class BaseClass {
 
 
 	@Parameters("browser")
-	@BeforeMethod
-	public void setUp(String brw) {
+	@BeforeSuite()
+	public void setUp(@Optional("chrome") String brw) {
 
 		if(brw.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", readconfig.getChromepath());
