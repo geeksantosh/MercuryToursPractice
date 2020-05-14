@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="5" passed="3">
+<testng-results skipped="0" failed="0" ignored="3" total="7" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="41044" started-at="2020-05-10T10:21:16 NPT" finished-at="2020-05-10T10:21:57 NPT">
+  <suite name="Suite" duration-ms="155939" started-at="2020-05-13T20:01:59 NPT" finished-at="2020-05-13T20:04:35 NPT">
     <groups>
     </groups>
-    <test name="Bankingapp Test" duration-ms="41044" started-at="2020-05-10T10:21:16 NPT" finished-at="2020-05-10T10:21:57 NPT">
+    <test name="Bankingapp Test" duration-ms="155939" started-at="2020-05-13T20:01:59 NPT" finished-at="2020-05-13T20:04:35 NPT">
+      <class name="com.mercurytours.tests.TC_BookFlight_0004">
+        <test-method status="PASS" signature="passangerSection()[pri:0, instance:com.mercurytours.tests.TC_BookFlight_0004@f2ff811]" name="passangerSection" duration-ms="1029" started-at="2020-05-13T20:04:34 NPT" finished-at="2020-05-13T20:04:35 NPT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passangerSection -->
+      </class> <!-- com.mercurytours.tests.TC_BookFlight_0004 -->
       <class name="com.mercurytours.tests.TC_Login_0001">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.mercurytours.tests.TC_Login_0001@60015ef5]" name="setUp" is-config="true" duration-ms="12699" started-at="2020-05-10T10:21:03 NPT" finished-at="2020-05-10T10:21:16 NPT">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.mercurytours.tests.TC_Login_0001@2f54a33d]" name="setUp" is-config="true" duration-ms="13193" started-at="2020-05-13T20:01:46 NPT" finished-at="2020-05-13T20:01:59 NPT">
           <params>
             <param index="0">
               <value>
@@ -18,19 +24,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="userLoginTest()[pri:0, instance:com.mercurytours.tests.TC_Login_0001@60015ef5]" name="userLoginTest" duration-ms="13463" started-at="2020-05-10T10:21:16 NPT" finished-at="2020-05-10T10:21:30 NPT">
+        <test-method status="PASS" signature="userLoginTest()[pri:0, instance:com.mercurytours.tests.TC_Login_0001@2f54a33d]" name="userLoginTest" duration-ms="33377" started-at="2020-05-13T20:01:59 NPT" finished-at="2020-05-13T20:02:32 NPT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLoginTest -->
       </class> <!-- com.mercurytours.tests.TC_Login_0001 -->
       <class name="com.mercurytours.tests.TC_Reservation_0002">
-        <test-method status="PASS" signature="flightReservation()[pri:0, instance:com.mercurytours.tests.TC_Reservation_0002@2f54a33d]" name="flightReservation" duration-ms="21908" started-at="2020-05-10T10:21:30 NPT" finished-at="2020-05-10T10:21:51 NPT">
+        <test-method status="PASS" signature="flightReservation()[pri:0, instance:com.mercurytours.tests.TC_Reservation_0002@1018bde2]" name="flightReservation" duration-ms="22097" started-at="2020-05-13T20:02:32 NPT" finished-at="2020-05-13T20:02:54 NPT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flightReservation -->
       </class> <!-- com.mercurytours.tests.TC_Reservation_0002 -->
       <class name="com.mercurytours.tests.TC_SelectFlight_0003">
-        <test-method status="PASS" signature="flightDetailSelection()[pri:0, instance:com.mercurytours.tests.TC_SelectFlight_0003@1018bde2]" name="flightDetailSelection" duration-ms="5591" started-at="2020-05-10T10:21:51 NPT" finished-at="2020-05-10T10:21:57 NPT">
+        <test-method status="PASS" signature="flightDetailSelection()[pri:0, instance:com.mercurytours.tests.TC_SelectFlight_0003@65b3f4a4]" name="flightDetailSelection" duration-ms="99343" started-at="2020-05-13T20:02:54 NPT" finished-at="2020-05-13T20:04:34 NPT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flightDetailSelection -->

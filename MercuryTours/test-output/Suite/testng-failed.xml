@@ -7,12 +7,24 @@
   <test thread-count="5" name="Bankingapp Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="com.mercurytours.tests.TC_Login_0001">
+        <methods>
+          <include name="userLoginTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mercurytours.tests.TC_Login_0001 -->
       <class name="com.mercurytours.tests.TC_Reservation_0002">
         <methods>
           <include name="flightReservation"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.mercurytours.tests.TC_Reservation_0002 -->
+      <class name="com.mercurytours.tests.TC_SelectFlight_0003">
+        <methods>
+          <include name="flightDetailSelection"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mercurytours.tests.TC_SelectFlight_0003 -->
     </classes>
   </test> <!-- Bankingapp Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

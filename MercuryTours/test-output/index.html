@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,6 +108,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.mercurytours.tests.TC_Reservation_0002" hash-for-method="flightReservation">flightReservation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.mercurytours.tests.TC_BookFlight_0004" hash-for-method="passangerSection">passangerSection</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -172,6 +177,21 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mercurytours.tests.TC_BookFlight_0004</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="passangerSection">
+                  </a> <!-- passangerSection -->
+                  <span class="method-name">passangerSection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -188,6 +208,7 @@
       &lt;class name=&quot;com.mercurytours.tests.TC_Login_0001&quot;/&gt;
       &lt;class name=&quot;com.mercurytours.tests.TC_Reservation_0002&quot;/&gt;
       &lt;class name=&quot;com.mercurytours.tests.TC_SelectFlight_0003&quot;/&gt;
+      &lt;class name=&quot;com.mercurytours.tests.TC_BookFlight_0004&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Bankingapp Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -201,7 +222,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Bankingapp Test (3 classes)</span>
+                <span class="test-name">Bankingapp Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -227,24 +248,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'flightReservation')
-data.setCell(0, 2, 'com.mercurytours.tests.TC_Reservation_0002')
-data.setCell(0, 3, 21908);
+data.setCell(0, 1, 'flightDetailSelection')
+data.setCell(0, 2, 'com.mercurytours.tests.TC_SelectFlight_0003')
+data.setCell(0, 3, 99343);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'userLoginTest')
 data.setCell(1, 2, 'com.mercurytours.tests.TC_Login_0001')
-data.setCell(1, 3, 13463);
+data.setCell(1, 3, 33377);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'flightDetailSelection')
-data.setCell(2, 2, 'com.mercurytours.tests.TC_SelectFlight_0003')
-data.setCell(2, 3, 5591);
+data.setCell(2, 1, 'flightReservation')
+data.setCell(2, 2, 'com.mercurytours.tests.TC_Reservation_0002')
+data.setCell(2, 3, 22097);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'passangerSection')
+data.setCell(3, 2, 'com.mercurytours.tests.TC_BookFlight_0004')
+data.setCell(3, 3, 1029);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -259,7 +284,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -271,6 +296,13 @@ return data;
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.mercurytours.tests.TC_SelectFlight_0003</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mercurytours.tests.TC_BookFlight_0004</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
                 <br/>
@@ -291,21 +323,28 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">userLoginTest</span>
-                <span class="method-start">12767 ms</span>
+                <span class="method-start">13266 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.mercurytours.tests.TC_Reservation_0002</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">flightReservation</span>
-                <span class="method-start">26240 ms</span>
+                <span class="method-start">46654 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.mercurytours.tests.TC_SelectFlight_0003</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">flightDetailSelection</span>
-                <span class="method-start">48151 ms</span>
+                <span class="method-start">68755 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mercurytours.tests.TC_BookFlight_0004</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">passangerSection</span>
+                <span class="method-start">168101 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
